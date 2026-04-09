@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include("partials/head.ejs")%>
+</head>
+
+<body>
+    <a href="/" class="btn btn-secondary m-2">Back</a>
+    <h1 class="text-center">Artist</h1>
+
+    <div class="container text-center mt-4">
+        <h2 class="mb-3">
+            <%=artist.name%>
+        </h2>
+
+        <div class="d-flex flex-column align-items-center">
+            <img src="<%=artist.images[0].url%>" alt="<%=artist.name%>" class="img-fluid mb-3"
+                style="max-width: 300px;">
+
+            <a href="<%=artist.external_urls.spotify%>" class="btn btn-success" target="_blank">
+                Spotify Page
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

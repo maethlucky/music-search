@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include("partials/head.ejs")%>
+</head>
+<body>
+    <h1 class="text-center">Music Search</h1>
+
+    <div class="container d-flex my-2 justify-content-center">
+        <form action="/searchByArtist" method="GET">
+            Search an Artist:
+            <input type="text" name="artist">
+            <button>Search</button>
+        </form>
+    </div>
+
+    <div class="container d-flex my-2 justify-content-center">
+        <form action="/searchBySong" method="GET">
+            Search a Song:
+            <input type="text" name="song">
+            <button>Search</button>
+        </form>
+    </div>
+
+    <div class="container d-flex my-2 justify-content-center">
+        <form action="/searchByAlbum" method="GET">
+            Search an Album:
+            <input type="text" name="album">
+            <button>Search</button>
+        </form>
+    </div>
+</body>
+</html>
